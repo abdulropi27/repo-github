@@ -128,6 +128,24 @@
             .match-prestasi-img { height: 220px; }
             .kepala-img { max-height: 180px; }
         }
+
+        /* Foto kepala sekolah - mobile friendly */
+.foto-kepsek {
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+.foto-kepsek {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+}
+
+/* Khusus layar HP */
+@media (max-width: 576px) {
+  .foto-kepsek {
+    width: 280px;
+  }
+}
     </style>
 </head>
 
@@ -297,7 +315,7 @@
 
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0 text-center">
-                <img src="assets/img/kepala sekolah.png"
+                <img src="img/kepsek.jpg" class="img-fluid rounded foto-kepsek" alt="Kepala Sekolah">
                     class="kepala-img" alt="Foto Kepala Sekolah">
             </div>
 
